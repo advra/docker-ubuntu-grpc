@@ -5,6 +5,9 @@ https://hub.docker.com/repository/docker/asdfadrian/ubuntu-grpc/general
 ## To Use
 Place your project files in the root and run the convenience script `mount_container.sh` to run the container and auto mount your project.
 
+## Extend from this container:
+Create your own Dockerfile and use `FROM asdfadrian/ubuntu-grpc:latest` as the base
+
 ### Note: If using vscode be set the following `c_cpp_properties.json` config:
 ```
 {
