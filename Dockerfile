@@ -64,8 +64,6 @@ RUN cmake -DgRPC_INSTALL=ON \
       ../..
 RUN make -j 2
 RUN make install
-WORKDIR /
-RUN git clone https://github.com/protocolbuffers/protobuf.git
 
 # create final docker image, copy final grpc / protobuf artifacts while removing intermediate artifacts
 #FROM devtools
